@@ -1,0 +1,70 @@
+set git configs - username, email, autosave password
+git config --global user.name "YOUR NAME"
+git config --global user.email "YOUR EMAIL ADDRESS"
+git config --global credential.helper 'cache --timeout=3600'
+
+https://help.github.com/articles/fork-a-repo/
+
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+diff -u file1 file2
+
+It shows the difference between two files. 
+- lines are the removed ones.
++ lines are the added ones.
+
+We can easily figure out new typos in the file by using diff to compare it with an older version.
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+Easy debugging and also if we dont like any new changes, we can  easily revert back to the older versions.
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+
+Manually choosing gives us more flexibility. We could avoided redundant commits and choose when to.
+But if we forgets to commit, it cant do anything .
+
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+google docs, we working on files seperately. we assume that there are no inter relations.
+But for software, code files could be inter dependent. So after each commit, we should be able to compare every file.
+
+
+How can you use the commands git log and git diff to view the history of files?
+
+Use git log to see the recent commmits. Find the commit id and use git diff to see the difference between two commits.
+
+How might using version control make you more confident to make changes that could break something?
+
+we can move to any commit in past. Hence if changes are bad, we can easily move back to the previous state.
+
+
+git config --global core.editor "subl -n -w"
+
+git config --global core.editor "'/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl' -n -w"
+git config --global push.default upstream
+git config --global merge.conflictstyle diff3
+
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+on projects that involves constant changes
+
+////////////////////////
+Compare two commits, printing each line that is present in one commit but not the other.
+
+git diff will do this. It takes two arguments - the two commit ids to compare.
+
+Make a copy of an entire Git repository, including the history, onto your own computer.
+
+git clone will do this. It takes one argument - the url of the repository to copy.
+
+Temporarily reset all files in a directory to their state at the time of a specific commit.
+
+git checkout will do this. It takes one argument - the commit ID to restore.
+
+Show the commits made in this repository, starting with the most recent.
+
+git log will do this. It doesn't take any arguments.
+///////////////////////////
