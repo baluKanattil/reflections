@@ -8,3 +8,15 @@ staging area is intermediate between directory and repository. we may not want t
 Only what is staged will be commited. It gives us freedom to choose what changes/files to be commited
 
 http://udacity.github.io/git-styleguide/
+
+git diff
+git diff --staged
+git reset --hard
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+If you have made more than on logical change (on different files) add only one file to the staging area at a time and do commits seperately.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+helps us to try new changes or add features.
