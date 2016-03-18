@@ -20,3 +20,18 @@ If you have made more than on logical change (on different files) add only one f
 What are some situations when branches would be helpful in keeping your history organized? How would branches help?
 
 helps us to try new changes or add features.
+
+How do the diagrams help you visualize the branch structure?
+
+git merge branch1 branch2
+git branch -d
+git show commitid
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+if there is a conflict in the branch, open the conflict, resolve it, stage and commit.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+pros: manually merging could take a lot of effort. Especially if there are several files.
+cons: if instead of addition, some code is replaced, then conflict happens and we have to do manually. Also even after merging ,we might need to review for bugs.
